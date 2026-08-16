@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Youssef | مطور برمجيات</title>
+
+    <meta name="description"
+          content="الموقع الشخصي ومعرض أعمال Youssef - مشاريع برمجية وتطوير مواقع.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- شريط التنقل -->
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <a href="#home" class="logo">
+                Youssef<span>.</span>
+            </a>
+
+            <button class="menu-btn"
+                    id="menuBtn"
+                    aria-label="فتح القائمة">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">من أنا</a>
+                <a href="#services">خدماتي</a>
+                <a href="#projects">مشاريعي</a>
+                <a href="#contact">تواصل معي</a>
+            </nav>
+
+            <button id="themeBtn"
+                    class="theme-btn"
+                    aria-label="تغيير المظهر">
+                🌙
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= الرئيسية ================= -->
+
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="small-title">
+                        👋 أهلاً بك في موقعي
+                    </p>
+
+                    <h1>
+                        أنا <span>Youssef</span>
+                        <br>
+                        مطور برمجيات
+                    </h1>
+
+                    <p class="hero-description">
+                        مهتم بالبرمجة وتطوير المواقع والبرامج.
+                        بشتغل بـ Python وHTML وCSS وJavaScript،
+                        وبحب أحول الأفكار لمشاريع فعلية.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects"
+                           class="btn primary">
+                            مشاهدة مشاريعي
+                        </a>
+
+                        <a href="#contact"
+                           class="btn secondary">
+                            تواصل معي
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- صندوق الكود -->
+
+                <div class="hero-card">
+
+                    <div class="code-window">
+
+                        <div class="window-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+<pre><code>
+<span class="purple">const</span> developer = {
+    name: <span class="green">"Youssef"</span>,
+
+    skills: [
+        <span class="green">"Python"</span>,
+        <span class="green">"HTML"</span>,
+        <span class="green">"CSS"</span>,
+        <span class="green">"JavaScript"</span>
+    ],
+
+    level: <span class="green">"Intermediate → Advanced"</span>,
+    learning: <span class="green">true</span>
+};
+</code></pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= من أنا ================= -->
+
+        <section id="about" class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>تعرف عليّ</p>
+
+                    <h2>من أنا؟</h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+
+                    <div class="about-text">
+
+                        <h3>
+                            بحب أعمل حاجات مفيدة بالكود.
+                        </h3>
+
+                        <p>
+                            أنا يوسف، مهتم بالبرمجة وتطوير المواقع
+                            والبرامج. بشتغل حاليًا بـ Python وHTML
+                            وCSS وJavaScript.
+                        </p>
+
+                        <p>
+                            بحب أجرب أفكار جديدة وأحولها لمشاريع
+                            فعلية، وكل مشروع بعمله بيزود خبرتي أكتر.
+                        </p>
+
+                    </div>
+
+
+                    <!-- المهارات -->
+
+                    <div class="skills">
+
+
+                        <div class="skill">
+
+                            <div>
+                                <span>Python</span>
+                                <span>متوسط</span>
+                            </div>
+
+                            <div class="progress">
+                                <span style="width: 60%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill">
+
+                            <div>
+                                <span>HTML</span>
+                                <span>جيد</span>
+                            </div>
+
+                            <div class="progress">
+                                <span style="width: 75%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill">
+
+                            <div>
+                                <span>CSS</span>
+                                <span>جيد</span>
+                            </div>
+
+                            <div class="progress">
+                                <span style="width: 65%"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill">
+
+                            <div>
+                                <span>JavaScript</span>
+                                <span>مبتدئ</span>
+                            </div>
+
+                            <div class="progress">
+                                <span style="width: 45%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= الخدمات ================= -->
+
+        <section id="services"
+                 class="section section-alt">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>ماذا أقدم؟</p>
+
+                    <h2>خدماتي</h2>
+
+                </div>
+
+
+                <div class="cards">
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            تطوير مواقع
+                        </h3>
+
+                        <p>
+                            إنشاء صفحات ومواقع ويب بسيطة
+                            ومتجاوبة باستخدام HTML وCSS
+                            وJavaScript.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            🐍
+                        </div>
+
+                        <h3>
+                            برمجة Python
+                        </h3>
+
+                        <p>
+                            إنشاء برامج وأدوات صغيرة باستخدام
+                            Python لحل مشاكل ومهام مختلفة.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            ⚙️
+                        </div>
+
+                        <h3>
+                            إصلاح الأكواد
+                        </h3>
+
+                        <p>
+                            المساعدة في اكتشاف الأخطاء وإصلاح
+                            المشاكل البسيطة في الأكواد.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= المشاريع ================= -->
+
+        <section id="projects"
+                 class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>أعمالي</p>
+
+                    <h2>مشاريعي</h2>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- المشروع الأول -->
+
+                    <article class="project">
+
+                        <div class="project-image">
+                            💰
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="tag">
+                                HTML / CSS / JS
+                            </span>
+
+                            <h3>
+                                Expense Tracker
+                            </h3>
+
+                            <p>
+                                تطبيق بسيط لإدارة المصروفات
+                                وحساب إجمالي الإنفاق.
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#"
+                                   class="project-btn">
+                                    معاينة
+                                </a>
+
+                                <a href="#"
+                                   class="project-btn outline">
+                                    الكود
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- المشروع الثاني -->
+
+                    <article class="project">
+
+                        <div class="project-image">
+                            🐍
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="tag">
+                                Python
+                            </span>
+
+                            <h3>
+                                Python Tool
+                            </h3>
+
+                            <p>
+                                أداة Python صغيرة لأتمتة
+                                بعض المهام المتكررة.
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#"
+                                   class="project-btn">
+                                    معاينة
+                                </a>
+
+                                <a href="#"
+                                   class="project-btn outline">
+                                    الكود
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- المشروع الثالث -->
+
+                    <article class="project">
+
+                        <div class="project-image">
+                            🎮
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="tag">
+                                JavaScript
+                            </span>
+
+                            <h3>
+                                Mini Game
+                            </h3>
+
+                            <p>
+                                لعبة ويب صغيرة باستخدام
+                                JavaScript.
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="#"
+                                   class="project-btn">
+                                    معاينة
+                                </a>
+
+                                <a href="#"
+                                   class="project-btn outline">
+                                    الكود
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= التواصل ================= -->
+
+        <section id="contact"
+                 class="section section-alt">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>
+                        هل لديك مشروع؟
+                    </p>
+
+                    <h2>
+                        تواصل معي
+                    </h2>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-info">
+
+                        <h3>
+                            لنتحدث عن فكرتك 🚀
+                        </h3>
+
+                        <p>
+                            لو عندك فكرة أو مشروع وتحتاج
+                            مساعدة في تنفيذه، تقدر تتواصل معي.
+                        </p>
+
+
+                        <div class="contact-item">
+
+                            📧
+
+                            <span>
+                                your@email.com
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            💬
+
+                            <span>
+                                Telegram: @username
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- نموذج التواصل -->
+
+                    <form id="contactForm"
+                          class="contact-form">
+
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="اسمك"
+                            required
+                        >
+
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="البريد الإلكتروني"
+                            required
+                        >
+
+
+                        <textarea
+                            id="message"
+                            rows="6"
+                            placeholder="اكتب رسالتك..."
+                            required
+                        ></textarea>
+
+
+                        <button
+                            type="submit"
+                            class="btn primary">
+
+                            إرسال الرسالة
+
+                        </button>
+
+
+                        <p id="formMessage"></p>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= Footer ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="year"></span>
+                Youssef. جميع الحقوق محفوظة.
+            </p>
+
+            <a href="#home">
+                العودة للأعلى ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
