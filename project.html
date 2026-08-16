@@ -1,226 +1,108 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>برنامج منظم الملفات | Youssef</title>
-
+    <title>برنامج منظم الملفات</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
+<nav>
+    <div class="nav-container">
+        <h2>مشاريعي</h2>
 
-        <div class="container nav-container">
-
-            <a href="index.html" class="logo">
-                Youssef
-            </a>
-
-            <div class="nav-links">
-
-                <a href="index.html">الرئيسية</a>
-                <a href="index.html#about">عني</a>
-                <a href="index.html#services">الخدمات</a>
-                <a href="index.html#projects">المشاريع</a>
-                <a href="index.html#contact">تواصل معي</a>
-
-            </div>
-
-            <button id="themeBtn" class="theme-btn">
-                🌙
-            </button>
-
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="project.html">منظم الملفات</a>
+            <a href="project2.html">مدير المصروفات</a>
+            <a href="project3.html">تاسك برو</a>
         </div>
+    </div>
+</nav>
 
-    </nav>
+<main class="project-page">
 
-
-    <main class="project-details">
-
-        <div class="container">
-
-            <div class="project-header">
-
-                <a href="index.html#projects" class="back-btn">
-                    ← العودة للمشاريع
-                </a>
-
-                <h1>
-                    برنامج منظم الملفات
-                </h1>
-
-                <p>
-                    برنامج سطح مكتب لتنظيم الملفات والمجلدات
-                    وتسهيل إدارة الملفات باستخدام واجهة رسومية.
-                </p>
-
-            </div>
-
-
-            <!-- الصورة الرئيسية -->
-
-            <section class="project-main-image">
-
-                <img
-                    src="images/Screenshot_2026-08-08-12-32-57-65.jpg"
-                    alt="واجهة برنامج منظم الملفات"
-                >
-
-            </section>
-
-
-            <!-- معرض الصور -->
-
-            <section class="gallery-section">
-
-                <h2>
-                    صور المشروع
-                </h2>
-
-                <div class="gallery">
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="images/Screenshot_2026-08-08-12-32-47-46.jpg"
-                            alt="واجهة برنامج منظم الملفات"
-                        >
-
-                    </div>
-
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="images/IMG_٢٠٢٦٠٨٠٨_١١٣٦١٨.jpg"
-                            alt="برنامج منظم الملفات"
-                        >
-
-                    </div>
-
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="images/IMG_٢٠٢٦٠٨٠٨_١١٣٦٠٥.jpg"
-                            alt="تنظيم الملفات"
-                        >
-
-                    </div>
-
-
-                    <div class="gallery-item">
-
-                        <img
-                            src="images/file_00000000dac481f784eee6a4bbcf1fe0.png"
-                            alt="واجهة البرنامج"
-                        >
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- معلومات المشروع -->
-
-            <section class="project-info">
-
-                <div>
-
-                    <h2>
-                        عن المشروع
-                    </h2>
-
-                    <p>
-                        برنامج منظم الملفات هو تطبيق سطح مكتب
-                        تم تطويره باستخدام Python بهدف تسهيل
-                        تنظيم وإدارة الملفات والمجلدات.
-                    </p>
-
-                    <p>
-                        يحتوي البرنامج على واجهة رسومية تساعد
-                        المستخدم على التعامل مع الملفات بطريقة
-                        أبسط وأكثر تنظيمًا.
-                    </p>
-
-
-                    <h2>
-                        أهم المميزات
-                    </h2>
-
-                    <ul class="features">
-
-                        <li>
-                            📁 تنظيم الملفات والمجلدات
-                        </li>
-
-                        <li>
-                            ⚡ سرعة في تنفيذ عمليات التنظيم
-                        </li>
-
-                        <li>
-                            🖥️ واجهة رسومية سهلة الاستخدام
-                        </li>
-
-                        <li>
-                            🛠️ أدوات متعددة لإدارة الملفات
-                        </li>
-
-                        <li>
-                            📱 دعم بعض أدوات ADB
-                        </li>
-
-                        <li>
-                            📂 تسهيل التعامل مع عدد كبير من الملفات
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <h2>
-                        التقنيات المستخدمة
-                    </h2>
-
-                    <div class="tech-list">
-
-                        <span>Python</span>
-                        <span>CustomTkinter</span>
-                        <span>Tkinter</span>
-                        <span>ADB</span>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-        </div>
-
-    </main>
-
-
-    <footer class="footer">
+    <section class="project-header">
+        <h1>برنامج منظم الملفات</h1>
 
         <p>
-            © <span id="year"></span>
-            Youssef. جميع الحقوق محفوظة.
+            برنامج متقدم لتنظيم وإدارة الملفات بسهولة
+            باستخدام Python وواجهة رسومية حديثة.
+        </p>
+    </section>
+
+    <!-- الصورة الرئيسية -->
+    <section class="main-image">
+        <img src="images/main.jpg" alt="برنامج منظم الملفات">
+    </section>
+
+    <!-- معرض صور المشروع -->
+    <section class="gallery">
+
+        <img src="images/image1.jpg" alt="منظم الملفات - صورة 1">
+
+        <img src="images/image2.jpg" alt="منظم الملفات - صورة 2">
+
+        <img src="images/image3.jpg" alt="منظم الملفات - صورة 3">
+
+        <img src="images/image4.png" alt="منظم الملفات - صورة 4">
+
+    </section>
+
+    <!-- معلومات المشروع -->
+    <section class="project-info">
+
+        <h2>عن المشروع</h2>
+
+        <p>
+            برنامج منظم الملفات هو أداة تم تطويرها باستخدام
+            Python و CustomTkinter و Tkinter و ADB.
+            يهدف البرنامج إلى تسهيل إدارة الملفات وتنظيمها
+            والتعامل مع أجهزة Android من خلال الكمبيوتر.
         </p>
 
-    </footer>
+        <h2>المميزات</h2>
 
+        <ul class="features">
 
-    <script src="script.js"></script>
+            <li>📁 تنظيم وإدارة الملفات</li>
+
+            <li>🔍 البحث عن الملفات بسهولة</li>
+
+            <li>📱 التعامل مع أجهزة Android</li>
+
+            <li>🔌 دعم ADB</li>
+
+            <li>🖥️ واجهة رسومية سهلة الاستخدام</li>
+
+            <li>⚡ تنفيذ عمليات الملفات بسرعة</li>
+
+            <li>🎨 واجهة حديثة باستخدام CustomTkinter</li>
+
+            <li>📂 إدارة الملفات بطريقة منظمة</li>
+
+        </ul>
+
+        <h2>التقنيات المستخدمة</h2>
+
+        <div class="technologies">
+            <span>Python</span>
+            <span>CustomTkinter</span>
+            <span>Tkinter</span>
+            <span>ADB</span>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 جميع الحقوق محفوظة</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
