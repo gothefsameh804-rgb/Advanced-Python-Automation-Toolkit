@@ -1,65 +1,101 @@
-// السنة الحالية
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+// ================= YEAR =================
 
+const yearElement = document.getElementById("year");
 
-// القائمة في الهاتف
-const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
-
-menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
-
-
-// إغلاق القائمة بعد الضغط على رابط
-document.querySelectorAll("nav a").forEach(link => {
-
-    link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-    });
-
-});
-
-
-// الوضع الليلي / النهاري
-const themeBtn = document.getElementById("themeBtn");
-
-themeBtn.addEventListener("click", () => {
-
-    document.body.classList.toggle("light");
-
-    if (document.body.classList.contains("light")) {
-        themeBtn.textContent = "☀️";
-        localStorage.setItem("theme", "light");
-    } else {
-        themeBtn.textContent = "🌙";
-        localStorage.setItem("theme", "dark");
-    }
-
-});
-
-
-// حفظ المظهر
-const savedTheme = localStorage.getItem("theme");
-
-if (savedTheme === "light") {
-    document.body.classList.add("light");
-    themeBtn.textContent = "☀️";
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
 }
 
 
-// نموذج التواصل
+// ================= MOBILE MENU =================
+
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+if (menuBtn && navMenu) {
+
+    menuBtn.addEventListener("click", function () {
+
+        navMenu.classList.toggle("active");
+
+    });
+
+
+    const navLinks = navMenu.querySelectorAll("a");
+
+    navLinks.forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            navMenu.classList.remove("active");
+
+        });
+
+    });
+
+}
+
+
+// ================= THEME =================
+
+const themeBtn = document.getElementById("themeBtn");
+
+if (themeBtn) {
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "light") {
+
+        document.body.classList.add("light");
+
+        themeBtn.textContent = "☀️";
+
+    }
+
+
+    themeBtn.addEventListener("click", function() {
+
+        document.body.classList.toggle("light");
+
+        const isLight =
+            document.body.classList.contains("light");
+
+
+        if (isLight) {
+
+            localStorage.setItem("theme", "light");
+
+            themeBtn.textContent = "☀️";
+
+        } else {
+
+            localStorage.setItem("theme", "dark");
+
+            themeBtn.textContent = "🌙";
+
+        }
+
+    });
+
+}
+
+
+// ================= CONTACT FORM =================
+
 const form = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
-form.addEventListener("submit", (event) => {
+if (form && formMessage) {
 
-    event.preventDefault();
+    form.addEventListener("submit", function(event) {
 
-    formMessage.textContent =
-        "تم استلام الرسالة تجريبيًا. سنضيف الإرسال الحقيقي لاحقًا.";
+        event.preventDefault();
 
-    form.reset();
+        formMessage.textContent =
+            "تم استلام الرسالة تجريبيًا ✅";
 
-});
+        form.reset();
+
+    });
+
+}
